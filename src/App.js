@@ -25,12 +25,20 @@ class App extends Component {
 
   setIsPokemonFavoriteById() {
     const favoritePokemonIds = readFavoritePokemonIds();
+    console.log('favoritePokemonIds:', favoritePokemonIds);
+    console.log('pokemonList:', pokemonList);
     const isPokemonFavorite = pokemonList.reduce((acc, pokemon) => {
+      // console.log(pokemon);
+      // console.log(acc);
       acc[pokemon.id] = favoritePokemonIds.includes(pokemon.id);
+      // está adicionando chave e valor desta forma:
+      // const person1 = {};
+      // person1['firstname'] = 'Mario';
+      // person1['lastname'] = 'Rossi';
       return acc;
     }, {});
-
-    return isPokemonFavorite;
+    console.log('isPokemonFavorite:', isPokemonFavorite);
+    return isPokemonFavorite; // retorna um objeto no formato {4: fase, 10: true}
   }
 
   render() {
@@ -41,9 +49,9 @@ class App extends Component {
       <div className="App">
         <h1>Pokédex</h1>
         <nav>
-          <Link className="link" to="/">{`Home`}</Link>
-          <Link className="link" to="/about">{`About`}</Link>
-          <Link className="link" to="/favorites">{`Favorite Pokémon`}</Link>
+          <Link className="link" to="/">Home</Link>
+          <Link className="link" to="/about">About</Link>
+          <Link className="link" to="/favorites">Favorite Pokémon</Link>
         </nav>
         <Routes
           favoritePokemon={ favoritePokemon }
