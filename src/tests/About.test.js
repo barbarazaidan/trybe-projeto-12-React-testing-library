@@ -3,11 +3,10 @@ import { render, screen } from '@testing-library/react';
 // import userEvent from '@testing-library/user-event';
 import About from '../pages/About';
 
-screen.logTestingPlaygroundURL();
-
 describe('Testa a página "About"', () => {
   it('Teste se a página contém um heading h2 com o texto About Pokédex;', () => {
     render(<About />);
+    // screen.logTestingPlaygroundURL();
 
     const title = screen.getByRole('heading', { level: 2, name: 'About Pokédex' });
 
@@ -33,4 +32,3 @@ describe('Testa a página "About"', () => {
     expect(p2).toBeInTheDocument();
   });
 });
-test('', () => {});

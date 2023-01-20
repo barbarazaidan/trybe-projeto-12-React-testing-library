@@ -44,6 +44,7 @@ class Pokedex extends React.Component {
 
   render() {
     const { isPokemonFavoriteById } = this.props;
+    console.log('isPokemonFavoriteById:', isPokemonFavoriteById);
     const filteredPokemon = this.fetchFilteredPokemon();
     const { pokemonIndex } = this.state;
     const pokemon = filteredPokemon[pokemonIndex];
