@@ -54,10 +54,10 @@ describe('Testa o componente FavoritePokemon', () => {
     expect(linkDetails).toBeInTheDocument();
 
     userEvent.click(linkDetails);
-    const favoritePokemon = screen.getByLabelText('Pokémon favoritado?');
-    const isFavorite = screen.getByRole('checkbox');
+    // const favoritePokemon = screen.getByLabelText('Pokémon favoritado?');
+    const isFavorite = screen.getByRole('checkbox', { name: 'Pokémon favoritado?' });
 
-    expect(favoritePokemon).toBeDefined();
+    expect(isFavorite).toBeDefined();
     expect(isFavorite).not.toBeChecked();
 
     userEvent.click(isFavorite);
