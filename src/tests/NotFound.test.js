@@ -9,7 +9,7 @@ describe('Testa a página Not Found', () => {
     const { history } = renderWithRouter(<NotFound />);
     const invalidRoute = '/teste-e-complicado';
 
-    console.log(history);
+    // console.log(history);
     history.push(invalidRoute); // o push é uma chave do history que tem o valor de uma
 
     const headingNotFound = screen.getByRole('heading', { level: 2, name: 'Page requested not found' });

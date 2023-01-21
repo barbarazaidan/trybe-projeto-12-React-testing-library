@@ -25,8 +25,8 @@ class App extends Component {
 
   setIsPokemonFavoriteById() {
     const favoritePokemonIds = readFavoritePokemonIds();
-    console.log('favoritePokemonIds:', favoritePokemonIds);
-    console.log('pokemonList:', pokemonList);
+    // console.log('favoritePokemonIds:', favoritePokemonIds);
+    // console.log('pokemonList:', pokemonList);
     const isPokemonFavorite = pokemonList.reduce((acc, pokemon) => {
       // console.log(pokemon);
       // console.log(acc);
@@ -37,7 +37,7 @@ class App extends Component {
       // person1['lastname'] = 'Rossi';
       return acc;
     }, {});
-    console.log('isPokemonFavorite:', isPokemonFavorite);
+    // console.log('isPokemonFavorite:', isPokemonFavorite);
     return isPokemonFavorite; // retorna um objeto no formato {4: fase, 10: true}
   }
 
