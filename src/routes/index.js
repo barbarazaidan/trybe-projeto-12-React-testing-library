@@ -16,6 +16,9 @@ class Routes extends Component {
     const {
       favoritePokemon, pokemonList, isPokemonFavoriteById, onUpdateFavoritePokemon,
     } = this.props;
+    // console.log('pokemonlist index', pokemonList);
+    // console.log('favoritePokemon index', favoritePokemon);
+    // console.log('isPokemonFavoriteById', isPokemonFavoriteById);
     return (
       <Switch>
         <Route

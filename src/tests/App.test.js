@@ -36,7 +36,10 @@ describe('Testa o componente APP', () => {
     userEvent.click(linkAbout);
 
     const { location: { pathname } } = history;
+    const title = screen.getByText('About Pokédex');
+
     expect(pathname).toBe('/about');
+    expect(title).toBeInTheDocument();
   });
 
   it('Testa se a aplicação é redirecionada para a página de favoritos ao clicar no link Favorite Pokémon da barra de navegação;', () => {

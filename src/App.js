@@ -7,6 +7,7 @@ import {
 } from './services/pokedexService';
 
 import pokemonList from './data';
+// console.log('pokemonlistApp', pokemonList);
 import Routes from './routes';
 
 import './App.css';
