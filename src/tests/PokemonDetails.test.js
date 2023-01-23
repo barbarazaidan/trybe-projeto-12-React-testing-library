@@ -6,28 +6,26 @@ import pokemonList from '../data';
 import App from '../App';
 
 describe('Testa o componente PokemonDetails', () => {
-//   it('Testa se as informações detalhadas do Pokémon selecionado são mostradas na tela', () => {
-//     render(<PokemonDetails pokemonList={ pokemonList } />);
-
-  //     const title = screen.getByText(`${} Details`);
-  //     const summary = screen.getByRole('heading', { name: 'Summary' });
-
-  //     expect(summary).toBeInTheDocument();
-  //   });
+  let moreDetails;
+  let pokemon;
+  let pokemonName;
 
   beforeEach(() => {
     renderWithRouter(<App />);
+    moreDetails = screen.getByText('More details');
+    pokemon = screen.getByTestId('pokemon-name');
+    pokemonName = pokemon.innerHTML;
   });
 
-  const textDetails = 'More details';
-  const dataTestIdPokemon = 'pokemon-name';
+  // const textDetails = 'More details';
+  // const dataTestIdPokemon = 'pokemon-name';
 
   it('Testa se as informações detalhadas do Pokémon selecionado são mostradas na tela', () => {
     // renderWithRouter(<App />);
 
-    const moreDetails = screen.getByText(textDetails);
-    const pokemon = screen.getByTestId(dataTestIdPokemon);
-    const pokemonName = pokemon.innerHTML;
+    // const moreDetails = screen.getByText(textDetails);
+    // const pokemon = screen.getByTestId(dataTestIdPokemon);
+    // const pokemonName = pokemon.innerHTML;
 
     userEvent.click(moreDetails);
 
@@ -44,9 +42,9 @@ describe('Testa o componente PokemonDetails', () => {
   it('Testa se existe na página uma seção com os mapas contendo as localizações do Pokémon:', () => {
     // renderWithRouter(<App />);
 
-    const moreDetails = screen.getByText(textDetails);
-    const pokemon = screen.getByTestId(dataTestIdPokemon);
-    const pokemonName = pokemon.innerHTML;
+    // const moreDetails = screen.getByText(textDetails);
+    // const pokemon = screen.getByTestId(dataTestIdPokemon);
+    // const pokemonName = pokemon.innerHTML;
 
     userEvent.click(moreDetails);
 
@@ -71,9 +69,9 @@ describe('Testa o componente PokemonDetails', () => {
   it('Testa se o usuário pode favoritar um Pokémon através da página de detalhes', () => {
     // renderWithRouter(<App />);
 
-    const moreDetails = screen.getByText(textDetails);
-    const pokemon = screen.getByTestId(dataTestIdPokemon);
-    const pokemonName = pokemon.innerHTML;
+    // const moreDetails = screen.getByText(textDetails);
+    // const pokemon = screen.getByTestId(dataTestIdPokemon);
+    // const pokemonName = pokemon.innerHTML;
 
     userEvent.click(moreDetails);
 
