@@ -11,6 +11,7 @@ import './pokemon-details.css';
 class PokemonDetails extends React.Component {
   findPokemon(givenId) {
     const { pokemonList } = this.props;
+    // console.log('pokemonList', pokemonList);
 
     return pokemonList.find(({ id }) => id === givenId);
   }
@@ -22,8 +23,15 @@ class PokemonDetails extends React.Component {
       onUpdateFavoritePokemon,
     } = this.props;
 
+    // console.log('isPokemonFavoriteById', isPokemonFavoriteById);
+    // console.log('onUpdateFavoritePokemon', onUpdateFavoritePokemon);
+    // console.log('match', this.props.match);
+
     const pokemon = this.findPokemon(parseInt(id, 10));
     const isFavorite = isPokemonFavoriteById[id];
+
+    // console.log('pokemon', pokemon);
+    // console.log('isFavorite', isFavorite);
 
     return (
       <section className="pokemon-details">
