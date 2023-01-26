@@ -75,7 +75,7 @@ Ao favoritar a partir da página de detalhes teste se:
 
 > Teste se o usuário pode favoritar um Pokémon através da página de detalhes:
 
-## Observações sobre as pastas
+### Observações sobre as pastas
 
 Apenas os códigos contidos na pasta /src/tests foram desenvolvidos por mim. Todos os outros arquivos são de criação da Trybe.
 
