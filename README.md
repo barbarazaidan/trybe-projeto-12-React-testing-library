@@ -75,12 +75,12 @@ Ao favoritar a partir da página de detalhes teste se:
 
 > Teste se o usuário pode favoritar um Pokémon através da página de detalhes:
 
-### Observações sobre as pastas
+## Observações sobre as pastas
 
 Apenas os códigos contidos na pasta /src/tests foram desenvolvidos por mim. Todos os outros arquivos são de criação da Trybe.
 
 Os console.log() comentados em outras pastas do /src inseri para verificar os retornos de funções, props e elementos. 
 
 
-#### Sobre o curso da Trybe
+## Sobre o curso da Trybe
 O programa total de estudo conta com mais de 1.500 horas de aulas presenciais e online,divididas ao longo de 12 meses. O conteúdo aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
