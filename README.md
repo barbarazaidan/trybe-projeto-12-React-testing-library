@@ -7,73 +7,115 @@ Neste projeto, comecei a trabalhar com a biblioteca do React Testing Library e t
 
 Confira os requisitos exigidos pela Trybe (texto extraído dos readme oficial da Trybe):
 
-1. Teste o componente <App.js />
+**1. Teste o componente <App.js />**
 
-> Teste se o topo da aplicação contém um conjunto fixo de links de navegação:
+<details><summary>Detalhes</summary>
+<p>
 
-> Teste se a aplicação é redirecionada para a página inicial, na URL / ao clicar no link Home da barra de navegação;
+> Teste se o topo da aplicação contém um conjunto fixo de links de navegação.
 
-> Teste se a aplicação é redirecionada para a página de About, na URL /about, ao clicar no link About da barra de navegação;
+> Teste se a aplicação é redirecionada para a página inicial, na URL / ao clicar no link Home da barra de navegação.
 
-> Teste se a aplicação é redirecionada para a página de Pokémon Favoritados, na URL /favorites, ao clicar no link Favorite Pokémon da barra de navegação;
+> Teste se a aplicação é redirecionada para a página de About, na URL /about, ao clicar no link About da barra de navegação.
+
+> Teste se a aplicação é redirecionada para a página de Pokémon Favoritados, na URL /favorites, ao clicar no link Favorite Pokémon da barra de navegação.
 
 > Teste se a aplicação é redirecionada para a página Not Found ao entrar em uma URL desconhecida.
 
-2. Teste o componente <About.js />.
+</p>
+</details>
 
-> Teste se a página contém as informações sobre a Pokédex;
+**2. Teste o componente <About.js />**
 
-> Teste se a página contém um heading h2 com o texto About Pokédex;
+<details><summary>Detalhes</summary>
+<p>
 
-> Teste se a página contém dois parágrafos com texto sobre a Pokédex;
+> Teste se a página contém as informações sobre a Pokédex.
+
+> Teste se a página contém um heading h2 com o texto About Pokédex.
+
+> Teste se a página contém dois parágrafos com texto sobre a Pokédex.
 
 > Teste se a página contém a seguinte imagem de uma Pokédex: https://cdn2.bulbagarden.net/upload/thumb/8/86/Gen_I_Pok%C3%A9dex.png/800px-Gen_I_Pok%C3%A9dex.png.
 
-3. Teste o componente <FavoritePokemon.js />
+</p>
+</details>
+
+**3. Teste o componente <FavoritePokemon.js />**
 
 Ao favoritar a partir da página de detalhes teste se:
 
-> É exibida na tela a mensagem No favorite pokemon found, caso a pessoa não tenha Pokémon favoritos;
+<details><summary>Detalhes</summary>
+<p>
+
+> É exibida na tela a mensagem No favorite pokemon found, caso a pessoa não tenha Pokémon favoritos.
 
 > Apenas são exibidos os Pokémon favoritados.
 
-4. Teste o componente <NotFound.js />
+</p>
+</details>
 
-> Teste se a página contém um heading h2 com o texto Page requested not found;
+**4. Teste o componente <NotFound.js />**
+
+<details><summary>Detalhes</summary>
+<p>
+
+> Teste se a página contém um heading h2 com o texto Page requested not found.
 
 > Teste se a página mostra a imagem https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif.
 
-5. Teste o componente <Pokedex.js />
+</p>
+</details>
 
-> Teste se a página contém um heading h2 com o texto Encountered Pokémon;
+**5. Teste o componente <Pokedex.js />**
 
-> Teste se é exibido o próximo Pokémon da lista quando o botão Próximo Pokémon é clicado:
+<details><summary>Detalhes</summary>
+<p>
 
-> Teste se é mostrado apenas um Pokémon por vez;
+> Teste se a página contém um heading h2 com o texto Encountered Pokémon.
 
-> Teste se a Pokédex tem os botões de filtro:
+> Teste se é exibido o próximo Pokémon da lista quando o botão Próximo Pokémon é clicado.
 
-> Teste se a Pokédex contém um botão para resetar o filtro:
+> Teste se é mostrado apenas um Pokémon por vez.
 
-6. Teste o componente <Pokemon.js />
+> Teste se a Pokédex tem os botões de filtro.
 
-> Teste se é renderizado um card com as informações de determinado Pokémon:
+> Teste se a Pokédex contém um botão para resetar o filtro.
 
-> Teste se o card do Pokémon indicado na Pokédex contém um link de navegação para exibir detalhes deste Pokémon. O link deve possuir a URL /pokemon/<id>, onde <id> é o id do Pokémon exibido;
+</p>
+</details>
 
-> Teste se ao clicar no link de navegação do Pokémon, é feito o redirecionamento da aplicação para a página de detalhes de Pokémon;
+**6. Teste o componente <Pokemon.js />**
 
-> Teste também se a URL exibida no navegador muda para /pokemon/<id>, onde <id> é o id do Pokémon cujos detalhes se deseja ver;
+<details><summary>Detalhes</summary>
+<p>
 
-> Teste se existe um ícone de estrela nos Pokémon favoritados:
+> Teste se é renderizado um card com as informações de determinado Pokémon.
 
-7. Teste o componente <PokemonDetails.js />
+> Teste se o card do Pokémon indicado na Pokédex contém um link de navegação para exibir detalhes deste Pokémon. O link deve possuir a URL /pokemon/<id>, onde <id> é o id do Pokémon exibido.
 
-> Teste se as informações detalhadas do Pokémon selecionado são mostradas na tela:
+> Teste se ao clicar no link de navegação do Pokémon, é feito o redirecionamento da aplicação para a página de detalhes de Pokémon.
 
-> Teste se existe na página uma seção com os mapas contendo as localizações do Pokémon:
+> Teste também se a URL exibida no navegador muda para /pokemon/<id>, onde <id> é o id do Pokémon cujos detalhes se deseja ver.
 
-> Teste se o usuário pode favoritar um Pokémon através da página de detalhes:
+> Teste se existe um ícone de estrela nos Pokémon favoritados.
+
+</p>
+</details>
+
+**7. Teste o componente <PokemonDetails.js />**
+
+<details><summary>Detalhes</summary>
+<p>
+
+> Teste se as informações detalhadas do Pokémon selecionado são mostradas na tela.
+
+> Teste se existe na página uma seção com os mapas contendo as localizações do Pokémon.
+
+> Teste se o usuário pode favoritar um Pokémon através da página de detalhes.
+
+</p>
+</details>
 
 ## Observações sobre as pastas
 
