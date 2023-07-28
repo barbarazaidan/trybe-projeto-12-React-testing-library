@@ -25,6 +25,8 @@ Confira os requisitos exigidos pela Trybe (texto extraído dos readme oficial da
 </p>
 </details>
 
+---
+
 **2. Teste o componente <About.js />**
 
 <details><summary>Detalhes</summary>
@@ -41,6 +43,8 @@ Confira os requisitos exigidos pela Trybe (texto extraído dos readme oficial da
 </p>
 </details>
 
+---
+
 **3. Teste o componente <FavoritePokemon.js />**
 
 Ao favoritar a partir da página de detalhes teste se:
@@ -55,6 +59,8 @@ Ao favoritar a partir da página de detalhes teste se:
 </p>
 </details>
 
+---
+
 **4. Teste o componente <NotFound.js />**
 
 <details><summary>Detalhes</summary>
@@ -66,6 +72,8 @@ Ao favoritar a partir da página de detalhes teste se:
 
 </p>
 </details>
+
+---
 
 **5. Teste o componente <Pokedex.js />**
 
@@ -85,6 +93,8 @@ Ao favoritar a partir da página de detalhes teste se:
 </p>
 </details>
 
+---
+
 **6. Teste o componente <Pokemon.js />**
 
 <details><summary>Detalhes</summary>
@@ -103,6 +113,8 @@ Ao favoritar a partir da página de detalhes teste se:
 </p>
 </details>
 
+---
+
 **7. Teste o componente <PokemonDetails.js />**
 
 <details><summary>Detalhes</summary>
@@ -116,6 +128,8 @@ Ao favoritar a partir da página de detalhes teste se:
 
 </p>
 </details>
+
+---
 
 ## Observações sobre as pastas
 
